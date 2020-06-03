@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <caption>Opening hours</caption>
+        <thead>  <!-- Az táblázat fejlécére hasznáandó elem , hogy a kód strukturált legyen-->
+            <tr>
+                <th>Day</th>
+                <th>Open</th>
+                <th>Close</th>
+            </tr>
+        </thead>
+        <tbody>  <!-- A táblázat body-jára hasznáandó elem , hogy a kód strukturált legyen-->
+            <tr>
+                <td>Monday - Friday</td>
+                <td>09:00</td>
+                <td rowspan="2">21:00</td> <!-- Ha azt szeretnénk hogy 1 sor több sor magasságát tegye ki , akkor a "rowspan="" " -t kell használni  -->
+            </tr>
+            <tr>
+                <td>Saturday</td>
+                <td>10:00</td>
+            </tr>
+            <tr>
+                <td>Sunday</td>
+                <td colspan="2">Closed</td> <!-- Ha azt szeretnénk hogy 1 oszlop több oszlop szélességét tegye ki , akkor a "colspan="" " -t kell használni  -->
+            </tr>
+        </tbody>
+        <tfoot>   <!-- Az táblázat footer-re hasznáandó elem , hogy a kód strukturált legyen-->
+            <td>
+                &copy; 2019  <!-- Copy jel a $copy segítségével érhető el-->
+            </td>
+        </tfoot>
+    </table>
+</body>
+</html>
